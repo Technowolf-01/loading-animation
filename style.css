@@ -1,0 +1,68 @@
+html {
+    background: #000;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+  }
+  
+  .square {
+    height: 94%;
+    width: 94%;
+    background: deeppink;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -47% 0 0 -47%;
+  }
+  
+  .square:hover {
+    background: deepskyblue;
+    transition: 5s ease-in-out;
+  }
+  
+  .black {
+    background: #f2f2f2;
+    animation: rotate 12s infinite linear;
+  }
+  
+  .black:hover {
+    background: #fff;
+    transition: 5s ease-in-out;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .back1 {
+    animation: rotated 12s infinite linear;
+  }
+  
+  @keyframes rotated {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  .heading {
+    color: #fff;
+  }
